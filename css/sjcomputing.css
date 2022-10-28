@@ -12,7 +12,7 @@ header{
 }
 nav{
   display: flex;
-  padding: 2% 6%;
+  padding: 1.5% 1.5%;
   justify-content: space-between;
   align-items: center;
 }
@@ -24,6 +24,7 @@ nav{
   list-style: none;
   display: inline-block;
   padding: 8px 12px;
+  padding-bottom: 0;
   position: relative;
 }
 nav a{
@@ -32,6 +33,22 @@ nav a{
   font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 1.2px;
+}
+nav a::after{
+  content: '';
+  position: absolute;
+  display: block;
+  height: 0.12em;
+  width:0%;
+  background-color: #fff;
+  bottom: -.5em;
+  border-radius: .1em;
+  left: 20%;
+  right: 20%;
+  transition: all ease-in-out 150ms;
+}
+nav a:hover::after{
+  width: 60%;
 }
 body {
   font-family: 'Poppins', sans-serif;
@@ -66,9 +83,39 @@ footer {
 }
 footer a{
   color: #000;
+  transition: all ease-in-out 180ms;
+}
+footer a:hover{
+  opacity: 0.6;
 }
 .social-links{
   font-size: 15px;
   margin-top: 2%;
   margin-bottom: 2%;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 880px) {
+  header{
+    min-height: 50vh;
+  }
+  section{
+      padding: 30px 10px;
+  }
+}
+@media screen and (max-width: 680px) {
+  header{
+    min-height: 30vh;
+  }
+  .nav-links{
+    text-align: center;
+  }
+  section{
+    padding: 30px 10px;
+  }
+}
+@media screen and (max-width: 380px) {
+  header{
+    min-height: 30vh;
+  }
 }
