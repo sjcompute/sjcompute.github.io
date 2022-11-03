@@ -1,20 +1,26 @@
+:root{
+  --blue: #2d8fc8;
+}
 *{
   margin: 0;
   padding: 0;
 }
-header{
-  min-height: 100vh;
+html{
+  scroll-behavior: smooth;
+  height: 100%;
   width: 100%;
-  background-image: url(../media/sjc_cover.png);
-  background-position: center;
-  background-size: cover;
-  position: relative;
+}
+header img{
+  object-fit: contain;
+  width: 100%;
+  margin-top: -10%;
 }
 nav{
   display: flex;
   padding: 1.5% 1.5%;
   justify-content: space-between;
   align-items: center;
+  background: #000;
 }
 .nav-links{
   flex: 1;
@@ -24,7 +30,6 @@ nav{
   list-style: none;
   display: inline-block;
   padding: 8px 12px;
-  padding-bottom: 0;
   position: relative;
 }
 nav a{
@@ -42,7 +47,7 @@ nav a::after{
   height: 0.12em;
   width:0%;
   background-color: #fff;
-  bottom: -.5em;
+  bottom: 0.2em;
   border-radius: .1em;
   left: 20%;
   right: 20%;
@@ -52,14 +57,14 @@ nav a:not([name="connect"]):hover::after{
   width: 60%;
 }
 #connect{
-  border: solid #fff 1px;
+  border: solid #fff 2px;
   font-weight: 400;
-  padding: 8px;
-  transition: all ease-in-out 150ms;
+  padding: 7px;
+  transition: all ease-in-out 200ms;
 }
 #connect:hover{
   background: #fff;
-  color: black;
+  color: #000;
 }
 body {
   font-family: 'Poppins', sans-serif;
@@ -81,7 +86,7 @@ p{
 }
 article{
   margin: 30px;
-  margin-top: 5%;
+  margin-top: 3%;
   margin-bottom: 2%;
 }
 article p{
@@ -98,36 +103,30 @@ footer a{
   transition: all ease-in-out 180ms;
 }
 footer a:hover{
-  opacity: 0.6;
+  color: var(--blue);
 }
 .social-links{
   font-size: 15px;
   margin-top: 2%;
   margin-bottom: 2%;
 }
-
 /* Responsiveness */
-@media screen and (max-width: 880px) {
-  header{
-    min-height: 50vh;
-  }
+@media screen and (max-width: 830px) {
   section{
-      padding: 30px 2px;
+    padding: 30px 10px;
   }
 }
 @media screen and (max-width: 680px) {
-  header{
-    min-height: 30vh;
+  nav{
+    padding: 2% 2%;
+  }
+  header img{
+  margin-top: 0;
   }
   .nav-links{
     text-align: center;
   }
   section{
     padding: 30px 5px;
-  }
-}
-@media screen and (max-width: 500px) {
-  header{
-    min-height: 30vh;
   }
 }
