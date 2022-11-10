@@ -1,5 +1,5 @@
 :root{
-  --blue: #2d8fc8;
+  --blue: #1caafc;
 }
 *{
   margin: 0;
@@ -45,7 +45,7 @@ nav a::after{
   position: absolute;
   display: block;
   height: 0.12em;
-  width:0%;
+  width: 0%;
   background-color: #fff;
   bottom: 0.2em;
   border-radius: .1em;
@@ -75,6 +75,9 @@ section{
   position: relative;
   padding: 30px 100px;
 }
+section a{
+  color: var(--blue);
+}
 h1{
   font-weight: 600;
   margin-bottom: 10px;
@@ -83,6 +86,17 @@ h1{
 p{
   line-height: 1.7;
   font-weight: 300;
+}
+blockquote{
+  position: relative;
+  padding-left: 1em;
+  border-left: 0.2em solid var(--blue);
+  line-height: 1.7em;
+  font-weight: 300;
+  margin: 40px;
+}
+q{
+  font-style: italic;
 }
 article{
   margin: 30px;
@@ -128,5 +142,9 @@ footer a:hover{
   }
   section{
     padding: 30px 5px;
+  }
+  blockquote{
+    margin-left: 0;
+    margin-right: 0;
   }
 }
