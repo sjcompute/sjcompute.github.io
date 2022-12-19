@@ -10,7 +10,7 @@ html{
   height: 100%;
   width: 100%;
 }
-header img{
+header>img{
   object-fit: contain;
   width: 100%;
   margin-top: -10%;
@@ -64,11 +64,11 @@ body{
   margin: 0;
   padding: 0;
 }
-section{
+section, article{
   position: relative;
   padding: 30px 100px;
 }
-section a{
+section>a, article>a{
   color: var(--blue);
 }
 h1{
@@ -93,7 +93,7 @@ blockquote{
 q{
   font-style: italic;
 }
-article{
+article, section{
   margin: 30px;
   margin-top: 3%;
   margin-bottom: 2%;
@@ -101,30 +101,28 @@ article{
 article p{
   font-size: 17px;
 }
-footer {
+footer{
   font-size: 12px;
   text-align: center;
   line-height: 2;
   padding: 10px;
 }
-footer a{
+footer>a{
   color: #000;
   transition: all ease-in-out 150ms;
 }
-footer a:hover{
+footer>a:hover{
   color: var(--blue);
 }
 .social-links{
   font-size: 15px;
   padding: 1vw;
-}
-.social-links p{
   line-height: 0.5;
 }
 
 /* Responsiveness */
 @media screen and (max-width: 830px) {
-  section{
+  section, article{
     padding: 30px 10px;
   }
 }
@@ -135,10 +133,11 @@ footer a:hover{
   header img{
   margin-top: 0;
   }
-  .nav-links{
+  nav>a{
+    display: block;
     text-align: center;
   }
-  section{
+  section, article{
     padding: 30px 5px;
   }
   blockquote{
