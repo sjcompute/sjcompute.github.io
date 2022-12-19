@@ -16,31 +16,24 @@ header img{
   margin-top: -10%;
 }
 nav{
-  display: flex;
+  display: block;
   padding: 1.5% 1.5%;
   justify-content: space-between;
+  text-align: right;
   align-items: center;
   background: #000;
 }
-.nav-links{
-  flex: 1;
-  text-align: right;
-}
-.nav-links ul li{
-  list-style: none;
+nav>a{
   display: inline-block;
   padding: 8px 12px;
   position: relative;
-}
-nav a{
   color: #fff;
-  text-decoration: none;
   font-size: 15px;
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 1.2px;
 }
-nav a::after{
+nav>a::after{
   content: '';
   position: absolute;
   display: block;
@@ -53,7 +46,7 @@ nav a::after{
   right: 20%;
   transition: all ease-in-out 150ms;
 }
-nav a:not([name="connect"]):hover::after{
+nav>a:not([name="connect"]):hover::after{
   width: 60%;
 }
 #connect{
@@ -66,7 +59,7 @@ nav a:not([name="connect"]):hover::after{
   background: #fff;
   color: #000;
 }
-body {
+body{
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
