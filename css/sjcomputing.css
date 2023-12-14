@@ -1,21 +1,21 @@
-:root{
-  --blue: #1caafc;
+:root {
+  --grey: #777;
 }
 *{
   margin: 0;
   padding: 0;
 }
-html{
+html {
   scroll-behavior: smooth;
   height: 100%;
   width: 100%;
 }
-header>img{
+header>img {
   object-fit: contain;
   width: 100%;
   margin-top: -10%;
 }
-nav{
+nav {
   display: block;
   padding: 1.5% 1.5%;
   justify-content: space-between;
@@ -23,7 +23,7 @@ nav{
   align-items: center;
   background: #000;
 }
-nav>a{
+nav>a {
   display: inline-block;
   padding: 8px 12px;
   position: relative;
@@ -33,7 +33,7 @@ nav>a{
   text-transform: uppercase;
   letter-spacing: 1.2px;
 }
-nav>a::after{
+nav>a::after {
   content: '';
   position: absolute;
   display: block;
@@ -46,73 +46,73 @@ nav>a::after{
   right: 20%;
   transition: all ease-in-out 150ms;
 }
-nav>a:not([name="connect"]):hover::after{
+nav>a:not([name="connect"]):hover::after {
   width: 60%;
 }
-#connect{
+#connect {
   border: solid #fff 2px;
   font-weight: 400;
   padding: 7px;
   transition: all ease-in-out 200ms;
 }
-#connect:hover{
+#connect:hover {
   background: #fff;
   color: #000;
 }
-body{
+body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
 }
-section, article{
+section, article {
   position: relative;
   padding: 30px 100px;
 }
-section>a, article>a{
-  color: var(--blue);
+section>a, article>a {
+  color: var(--grey);
 }
-h1{
+h1 {
   font-weight: 600;
   font-size: 30px;
 }
-p{
+p {
   font-weight: 300;
   line-height: 1.7;
   margin: 3px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
-blockquote{
+blockquote {
   position: relative;
   padding-left: 1em;
-  border-left: 0.2em solid var(--blue);
+  border-left: 0.2em solid var(--grey);
   line-height: 1.7em;
   font-weight: 300;
   margin: 40px;
 }
-q{
+q {
   font-style: italic;
 }
-article, section{
+article, section {
   margin: 30px;
   margin-top: 3%;
   margin-bottom: 2%;
 }
-article p{
+article p {
   font-size: 17px;
 }
-footer{
+footer {
   font-size: 12px;
   text-align: center;
   line-height: 2;
   padding: 10px;
 }
-footer>a{
+footer>a {
   color: #000;
   transition: all ease-in-out 150ms;
 }
-footer>a:hover{
-  color: var(--blue);
+footer>a:hover {
+  color: var(--grey);
 }
 .social-links{
   font-size: 15px;
