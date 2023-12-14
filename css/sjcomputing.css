@@ -68,7 +68,7 @@ section, article {
   position: relative;
   padding: 30px 100px;
 }
-section>a, article>a {
+section a, section a:visited, article a, article a:visited {
   color: var(--grey);
 }
 h1 {
@@ -107,11 +107,11 @@ footer {
   line-height: 2;
   padding: 10px;
 }
-footer>a {
+footer a, footer a:visited {
   color: #000;
   transition: all ease-in-out 150ms;
 }
-footer>a:hover {
+footer a:hover {
   color: var(--grey);
 }
 .social-links {
