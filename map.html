@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({ startOnLoad: true });
+  </script>
+  
+    <style>
+      body{
+        background-color: white;
+      }
+        nav {
+  display: block;
+  padding: 1.5% 1.5%;
+  justify-content: space-between;
+  text-align: right;
+  align-items: center;
+}
+nav>a {
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+  color: black;
+  font-size: 15px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-family: 'Poppins', sans-serif;
+}
+nav>a::after {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 0.12em;
+  width: 0%;
+  background-color: black;
+  bottom: 0.2em;
+  border-radius: .1em;
+  left: 20%;
+  right: 20%;
+  transition: all ease-in-out 150ms;
+}
+nav>a:not([name="connect"]):hover::after {
+  width: 60%;
+}
+ pre {
+  align-items: center;
+ }
+    </style>
+</head>
+<body>
+    <nav> 
+        <a href="index.html">Home</a>
+    </nav>
+<pre class="mermaid">
+    flowchart LR
+            a(Social Justice Computing):::name --- b(Arlington Public Schools):::name
+            a --- c(NOVA Web Development):::name
+            a --- d(Jetro Web Dev):::name
+            b --- c
+            d --- c
+            d -.- e(SECOSOL):::name
+            c --- e
+            c --- f(Santein Freelance Studio):::name
+            c --- g(DNOVA Council):::name
+            e --- g
+            g --- h(Next System Studies):::name
+            h --- i(George Mason University):::name
+            e --- k(Mujeres Manos a la Obra):::name
+            e -.- j(Magic Broom):::name
+            e --- l(CCHD):::name
+            l --- m(U.S. Federation of Worker Coops):::name
+            m --- n(International Cooperative Alliance):::name
+            d -.- n
+            j --- n
+            k --- n
+
+            linkStyle default fill:none,stroke-width:3px,stroke:grey,align-items:center
+
+            click a href "https://sjcompute.org/"
+            click b href "https://www.apsva.us/"
+            click c href "https://novawebdevelopment.org/"
+            click e href "https://secosol.us/"
+            click g href "https://nextsystem.gmu.edu/projects/dnova/council"
+            click h href "https://nextsystem.gmu.edu/"
+            click i href "https://www.gmu.edu/"
+            click m href "https://usworker.coop/en/"
+            click n href "https://ica.coop/en"
+</pre>
+</body>
+</html>
