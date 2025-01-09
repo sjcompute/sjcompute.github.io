@@ -39,9 +39,10 @@ h3 {
     grid-area: location;
 
 }
+
 p{
-  font-family: 'times new roman';
-  color: white;
+  font-family: 'CODE';
+  color: rgb(230, 230, 230);
   grid-area: main;
   font-size: medium;
 }
