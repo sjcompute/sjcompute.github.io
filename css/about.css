@@ -29,7 +29,7 @@ h2 {
     color: white;
     font-size: 2.29rem;
     grid-area: name;
-    padding: 0.45%;
+    padding: 0.35%;
 
 }
 h3 {
@@ -40,9 +40,10 @@ h3 {
 
 }
 p{
-  font-family: 'CODE Light';
+  font-family: 'times new roman';
   color: white;
   grid-area: main;
+  font-size: medium;
 }
 img {
   width: 93%;
@@ -50,6 +51,7 @@ img {
   padding: 2% 2%;
   grid-area: image;
   border-radius: 5%;
+  object-fit: cover;
 
 }
 #box1 {
@@ -68,6 +70,7 @@ img {
     "img main"
     "footer main";
 }
+
 #box2 {
   width: 500px;
   height:300px;
@@ -100,6 +103,16 @@ img {
   "img main"
   "footer main";
 }
+/* #box3 img {
+  width: 75%;
+  height: 180%;
+  padding: 2% 2%;
+  grid-area: image;
+  border-radius: 5%;
+  object-fit: cover;
+
+} */
+
 #box4 {
   width: 500px;
   height:300px;
@@ -116,6 +129,39 @@ img {
   "img main"
   "footer main";
 }
+#box5 {
+  width: 500px;
+  height:300px;
+  margin: 2%;
+  padding: 2%;
+  border-radius: 25px;
+  float: right;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr .5fr 1fr 1fr;
+  grid-template-areas: 
+  "image name"
+  "image location"
+  "img main"
+  "footer main";
+}
+#box6 {
+  width: 500px;
+  height:300px;
+  margin: 2%;
+  padding: 2%;
+  border-radius: 25px;
+  float: left;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr .5fr 1fr 1fr;
+  grid-template-areas: 
+  "image name"
+  "image location"
+  "img main"
+  "footer main";
+}
+
 nav {
   display: block;
   padding: 1.5% 1.5%;
