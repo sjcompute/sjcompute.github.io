@@ -10,45 +10,130 @@
     <nav> 
         <a href="index.html">Home</a>
     </nav>
-    <h1>About Us</h1>
-    <div id="box1">
-        <img src="media/Ved.jpeg" alt="Ved Chudiwale">
-        <h2>Ved Chudiwale</h2>
-        <h3>Arlington, VA</h3>
-        <p>Ved is a passionate student dedicated to supporting the success of non-profit organizations. He volunteers his time and expertise to various non-profits where he assists with financial management and tax preparation. </p>
-    </div>
-    <div id="box2">
-        <img src="media/person.jpeg" alt="person image">
-        <h2>Vrishin Hazari</h2>
-        <h3>Arlington, VA</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, consequatur?</p>
-    </div>
-    <div id="box3">
-        <img src="media/jeff.jpg" alt="Jeffrey Elkner">
-        <h2>Jeffrey Elkner</h2>
-        <h3>Arlington, VA</h3>
-        <p>Jeff has been a high school computer science teacher for 33 years, and a free software activist for almost as long. 
-            His overriding passion is working for social justice, and he hopes SJC can play an active role in using ICT to serve humanity.
-        </p>
-    </div>
-    <div id="box4">
-        <img src="media/hubbard.JPG" alt="Stephen Hubbard"> 
-        <h2>Stephen Hubbard</h2>
-        <h3>Northridge, CA</h3>
-        <p>Dr. Stephen Hubbard brings over 33 years of experience to Social Justice Computing Board of Directors across a number of technical fields as well as education. Dr Hubbard also mentors U.S. and African students in STEM.</p>
-    </div>
-    <div id="box5">
-        <img src="media/Sahnun.jpeg" alt="Sahnun Mohamud"> 
-        <h2>Sahnun Mohamud</h2>
-        <h3>Annandale, VA</h3>
-        <p>Sahnun is a professional software developer. In high school, he founded WakeUpSomalia which aimed to use technology to expand education access.</p>
-    </div>
-    <div id="box6">
-        <img src="media/Zawolo.jpeg" alt="Isaac Zawolo"> 
-        <h2>Isaac Zawolo</h2>
-        <h3>Charles County, MD</h3>
-        <p>Issac Zawolo is an advocate for social justice. He was born and raised in Liberia. From college to present he has been an activist always speaking out for those who are opressed. Lastly, he has been an educator for over 40 years bringing in a multitude of experience.</p>
-        </p>
-    </div>
+
+    <div class="container about-container"><!--====About container section =====-->
+        <h1>About Us</h1>
+        
+        <div class="about-members"><!--===About member section ====-->
+
+            <div class="member"><!--each member info -->
+                
+                <div class="member-bio">
+                    <img src="media/Ved.jpeg" alt="Ved Chudiwale">
+                    <h2>Ved Chudiwale</h2>
+                    <h3>Arlington, VA</h3>
+
+                    <label for="toggle-member-details" class="show-info">Read More</label>
+                    <input type="checkbox" id="toggle-member-details" class="open-member-info">
+                    
+                    <div class="member-details">
+                        <p>Ved is a passionate student dedicated to supporting the success of non-profit organizations. He volunteers his time and expertise to various non-profits where he assists with financial management and tax preparation.
+
+                        </p>
+                     
+                        <label for="toggle-member-details" class="close-info">Close</label>
+                    </div>
+                    
+                </div>
+            
+            </div><!--End-->
+
+            <div class="member"><!--each member info -->
+                
+                <div class="member-bio">
+                    <img src="media/jeff.jpg" alt="Jeff Elkner">
+                    <h2>Jeff Elker</h2>
+                    <h3>Arlington, VA</h3>
+
+                    <div class="member-details">
+                        <p>Jeff has been a high school computer science teacher for 33 years, and a free software activist for almost as long. His overriding passion is working for social justice, and he hopes SJC can play an active role in using ICT to serve humanity.</p>
+                        <label for="checkbox" class="close-info">Close</label>
+                    </div>
+
+                    <label for="checkbox" class="show-info">Read More</label>
+                    <input type="checkbox" id="checkbox" class="open-member-info">
+                </div>
+            
+            </div><!--End-->
+
+            <div class="member"><!--each member info -->
+                
+                <div class="member-bio">
+                    <img src="media/hubbard.JPG" alt="Stephen Hubbard">
+                    <h2>Stephen Hubbard</h2>
+                    <h3>Arlington, VA</h3>
+
+                    <div class="member-details">
+                        <p>Jeff has been a high school computer science teacher for 33 years, and a free software activist for almost as long. His overriding passion is working for social justice, and he hopes SJC can play an active role in using ICT to serve humanity.</p>
+                     
+                        <label for="checkbox" class="close-info">Close</label>
+                    </div>
+                    <label for="checkbox" class="show-info">Read More</label>
+                    <input type="checkbox" id="checkbox" class="open-member-info">
+                </div>
+            
+            </div><!--End-->
+
+            <div class="member"><!--each member info -->
+                
+                <div class="member-bio">
+                    <img src="media/Zawolo.jpeg" alt="Isaac Zawolo">
+                    <h2>Isaac Zawolo</h2>
+                    <h3>Arlington, VA</h3>
+
+                    <div class="member-details">
+                        <p>Issac Zawolo is an advocate for social justice. He was born and raised in Liberia. From college to present he has been an activist always speaking out for those who are opressed. Lastly, he has been an educator for over 40 years bringing in a multitude of experience.
+                        </p>
+                     
+                        <label for="checkbox" class="close-info">Close</label>
+                    </div>
+                    <label for="checkbox" class="show-info">Read More</label>
+                    <input type="checkbox" id="checkbox" class="open-member-info">
+                </div>
+            
+            </div><!--End-->
+
+            <div class="member"><!--each member info -->
+                
+                <div class="member-bio">
+                    <img src="media/Sahnun.jpeg" alt="Isaac Zawolo">
+                    <h2>Sahnun Mohamud</h2>
+                    <h3>Annandale, VA</h3>
+
+                    <div class="member-details">
+                        <p>Sahnun is a professional software developer. In high school, he founded WakeUpSomalia which aimed to use technology to expand education access.</p>
+                     
+                        <label for="checkbox" class="close-info">Close</label>
+                    </div>
+                    <label for="checkbox" class="show-info">Read More</label>
+                    <input type="checkbox" id="checkbox" class="open-member-info">
+                </div>
+            
+            </div><!--End-->
+
+            <div class="member"><!--each member info -->
+                
+                <div class="member-bio">
+                    <img src="media/person.jpeg" alt="Sahnun">
+                    <h2>Ved Chudiwale</h2>
+                    <h3>Arlington, VA</h3>
+
+                    <div class="member-details">
+                        <p>Ved is a passionate student dedicated to supporting the success of non-profit organizations. He volunteers his time and expertise to various non-profits where he assists with financial management and tax preparation.</p>
+                     
+                        <label for="checkbox" class="close-info">Close</label>
+                    </div>
+                    <label for="checkbox" class="show-info">Read More</label>
+                    <input type="checkbox" id="checkbox" class="open-member-info">
+                </div>
+            
+            </div><!--End-->
+
+            
+
+        </div><!--End of about member section-->
+
+    </div><!--End of about container member section-->
+    
 </body>
 </html>
