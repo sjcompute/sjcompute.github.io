@@ -185,9 +185,6 @@ img {
 
 }
 
-
-
-
 .close:hover{
   background-color : var(--button-red-bg-color);
 }
@@ -225,11 +222,20 @@ img {
   opacity: 1;
   z-index: 1;
 }
+
+.memeber-details:checked + .member-details p, .memeber-details:checked + .member-details label{
+  transform: translateY(0);
+
+}
  
 
 
 .open-member-info{
   display : none;
+}
+
+.open-member-info:checked + .member .member-details {
+  transform: translateY(0);
 }
 .member button{
   cursor: pointer;
