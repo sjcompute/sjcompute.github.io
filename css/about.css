@@ -230,8 +230,12 @@ img {
   z-index: 1;
 }
 
+.open-member-info:checked+.member-bio {
+  visibility: visible;
+  opacity: 1;
+}
 
-.member-details p {
+.member-bio .member-details:checked+.member-details p {
   margin-bottom: 15px;
 }
 
