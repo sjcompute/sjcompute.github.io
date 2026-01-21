@@ -101,285 +101,92 @@ img {
   margin: 0 auto;
 }
 
+/* About Section */
 .about-container h1 {
-  font-size: 4.5rem;
-  padding: 0;
-  font-weight: 900;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 3rem;
 }
 
+/* Members */
 .about-members {
   display: flex;
-  justify-content: space-between;
-  /* align-items: baseline; */
   flex-wrap: wrap;
-  margin: 14px 0;
-  /* margin-bottom : 20px; */
-  gap: 15px;
-
+  gap: 2rem;
+  justify-content: center;
 }
-
-.member-bio h2 {
-  text-align: center;
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: var(--font-primary-color);
-  padding: .3em;
-}
-
-.member-bio h3 {
-  font-size: 1.2rem;
-  text-align: center;
-  padding: 0 0.3em;
-  color: var(--font-primary-color);
-}
-
-
 
 .member {
-  max-width: 450px;
-  width: 30%;
-  /* align-items: flex-start; */
-  display: inline-block;
-  margin: 2px;
-  padding: 15px;
-  background-color: var(--bg-primary-color);
-  border-radius: 5px;
-  box-sizing: border-box;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, .3);
-}
-
-.member p {
-  color: rgba(0, 0, 0, 0.849);
-  font-size: 1.2rem;
-
-}
-
-
-.member .member-bio {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-.member .member-bio img {
-  width: 150px;
-  border-radius: 50%;
-  height: 150px;
-  align-items: center;
-  border: 4px solid black;
-  padding: 0;
-}
-
-.show-info,
-.close-info {
-  font-size: 1.5rem;
-  color: var(--font-primary-color);
-  padding: 0.5em;
-  width: 90%;
-  margin: 0.8em auto;
-  background-color: var(--button-bg-color-primary);
-  color: var(--button-text-primary-color);
-  transition: 0.3s ease-in-out;
-  border: none;
-  transform: scale(1.1);
+  background-color: #222;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 250px;
   text-align: center;
-  cursor: pointer;
+  position: relative;
+  transition: transform 0.3s;
 }
 
-.close-info {
-  display: block;
-  width: 50%;
-
-  margin: 0 auto;
-
+.member:hover {
+  transform: scale(1.05);
 }
 
-.show-info:hover,
-.close-info:hover {
-  transform: scale(1)
+.member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 1rem;
+  object-fit: cover;
+  border: 3px solid #fff;
 }
 
-.close:hover {
-  background-color: var(--button-red-bg-color);
+.member h2 {
+  margin: 1rem 0 0.5rem 0;
 }
 
-.show-info:hover {
-  background-color: rgba(0, 128, 0, 0.795);
-}
-
-.member-details {
-  position: absolute;
-  background-color: var(--bg-primary-color);
-  padding: 0.5em;
-  font-size: 1.5rem;
-  box-shadow: 2px 14px 20px rgba(0, 0, 0, 0.3);
-  top: -80;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 50vh;
-  visibility: hidden;
-  opacity: 0;
-  transition: 0.5 ease-in-out;
-  transition: visibility 0s, opacity 0.5s ease-in-out;
-  border-radius: 5px;
-  width: 100%;
-  /* margin : 0 auto; */
-  margin-top: 23px;
-  z-index: 1;
-}
-
-.open-member-info:checked+.member-bio {
-  visibility: visible;
-  opacity: 1;
-}
-
-.member-bio .member-details:checked+.member-details p {
-  margin-bottom: 15px;
-}
-
-.memeber-details:checked+.member-details {
-  visibility: visible;
-  opacity: 1;
-  z-index: 1;
-}
-
-.memeber-details:checked+.member-details p,
-.memeber-details:checked+.member-details label {
-  transform: translateY(0);
-
-}
-
-
-
-.open-member-info {
-  display: none;
-}
-
-.open-member-info:checked+.member .member-details {
-  transform: translateY(0);
+.member h3 {
+  font-weight: 400;
+  color: #aaa;
+  margin-bottom: 1rem;
 }
 
 .member button {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  background-color: #444;
+  color: #fff;
+  border: none;
   cursor: pointer;
-  margin-top: 0.5em;
+  border-radius: 5px;
 }
 
-.member button a {
-  text-decoration: none;
-  color: var(--button-text-primary-color);
+.member button:hover {
+  background-color: #00aa00;
 }
 
-/* #box1 {
-    width: 500px;
-	  height:300px;
-    margin: 2%;
-    padding: 2%;
-    border-radius: 25px;
-    float: left;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr .5fr 1fr 1fr;
-    grid-template-areas: 
-    "image name"
-    "image location"
-    "img main"
-    "footer main";
-    Note I change the following naming convention box1, box2.. to this
-    member
-} */
-
-/* #box2 {
-  width: 500px;
-  height:300px;
-  margin: 2%;
-  padding: 2%;
-  border-radius: 25px;
-  float: right;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr .5fr 1fr 1fr;
-  grid-template-areas: 
-  "image name"
-  "image location"
-  "img main"
-  "footer main";
-} */
-/* #box3 {
-  width: 500px;
-  height:300px;
-  margin: 2%;
-  padding: 2%;
-  border-radius: 25px;
-  float: left;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr .5fr 1fr 1fr;
-  grid-template-areas: 
-  "image name"
-  "image location"
-  "img main"
-  "footer main";
-} */
-/* #box3 img {
-  width: 75%;
-  height: 180%;
-  padding: 2% 2%;
-  grid-area: image;
-  border-radius: 5%;
-  object-fit: cover;
-
-} */
-
-/* #box4 {
-  width: 500px;
-  height:300px;
-  margin: 2%;
-  padding: 2%;
-  border-radius: 25px;
-  float: right;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr .5fr 1fr 1fr;
-  grid-template-areas: 
-  "image name"
-  "image location"
-  "img main"
-  "footer main";
+/* Member Details */
+.member-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  color: #eee;
+  padding: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-#box5 {
-  width: 500px;
-  height:300px;
-  margin: 2%;
-  padding: 2%;
-  border-radius: 25px;
-  float: right;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr .5fr 1fr 1fr;
-  grid-template-areas: 
-  "image name"
-  "image location"
-  "img main"
-  "footer main";
+
+.member-details.show {
+  display: flex;
 }
-#box6 {
-  width: 500px;
-  height:300px;
-  margin: 2%;
-  padding: 2%;
-  border-radius: 25px;
-  float: left;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr .5fr 1fr 1fr;
-  grid-template-areas: 
-  "image name"
-  "image location"
-  "img main"
-  "footer main";
-} */
+
+.member-details p {
+  margin-bottom: 1.5rem;
+}
 
 nav {
   display: block;
@@ -431,6 +238,29 @@ nav>a:not([name="connect"]):hover::after {
   color: #000;
 }
 
+footer {
+  font-size: 12px;
+  text-align: center;
+  line-height: 2;
+  padding: 10px;
+  background: #000;
+}
+footer p {
+  color: white;
+}
+footer a, footer a:visited {
+  color: white;
+  transition: all ease-in-out 150ms;
+}
+footer a:hover {
+  color: var(--grey);
+}
+.social-links {
+  font-size: 15px;
+  padding: 1vw;
+  line-height: 0.5;
+}
+
 @media screen and (max-width: 1200px) {
   nav {
     padding: 2% 2%;
@@ -474,60 +304,3 @@ nav>a:not([name="connect"]):hover::after {
 
   }
 }
-
-/* @media screen and (max-width: 830px) {
-  nav{
-    padding: 2% 2%;
-  }
-  body {
-    background-size: contain;
-    background-repeat: repeat;
-  }
-  nav>a {
-    display: block;
-    text-align: center;
-  }
-  #box1, #box2, #box3, #box4 {
-    width: 70%;
-    float: left;
-  }
-}
-
-@media screen and (max-width: 680px) {
-  nav{
-    padding: 2% 2%;
-  }
-  body {
-    background-size: contain;
-    background-repeat: repeat;
-  }
-  nav>a {
-    display: block;
-    text-align: center;
-  }
-  #box1, #box2, #box3, #box4 {
-    width: 93%;
-    float: left;
-  }
-
-
-}
-@media screen and (max-width: 540px) {
-  nav{
-    padding: 2% 2%;
-  }
-  body {
-    background-size: contain;
-    background-repeat: repeat;
-  }
-  nav>a {
-    display: block;
-    text-align: center;
-  }
-  #box1, #box2, #box3, #box4 {
-    width: 90%;
-    float: left;
-  }
-
-
-} */
